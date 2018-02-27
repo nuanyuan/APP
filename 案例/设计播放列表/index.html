@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="jquery.mobile/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="jquery.mobile/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.4.5.js"></script>
+<script>
+</script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" data-fullscreen="true">
+        <a href="#">返回</a>    
+        <h1>播放列表</h1>    
+        <a href="#">设置</a>
+    </div>
+    <div data-role="popup" id="purchase" data-theme="d" data-overlay-theme="b" class="ui-content" style="max-width:340px;">
+        <h3>是否加入播放列表？</h3>
+        <a href="#" data-role="button" data-rel="back" data-theme="b" data-icon="check" data-inline="true" data-mini="true">是</a>
+        <a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">否</a>
+    </div>
+    <ul data-role="listview">
+        <li><a href="#">
+            <img src="images/1.jpg">
+            <h2>小猪歌</h2>
+            <p>SNH48</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>
+        <li><a href="#">
+            <img src="images/2.jpg">
+            <h2>Smooth Operator</h2>
+            <p>G.Soul</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>
+        <li><a href="#">
+            <img src="images/3.jpg">
+            <h2>直到那一天</h2>
+            <p>刘惜君</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>
+        <li><a href="#">
+            <img src="images/4.jpg">
+            <h2>遗忘之前</h2>
+            <p>徐佳莹</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>
+        <li><a href="#">
+            <img src="images/5.jpg">
+            <h2>飞光</h2>
+            <p>河图</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>
+        <li><a href="#">
+            <img src="images/6.jpg">
+            <h2>老炮儿 音乐原声辑</h2>
+            <p>电影原声</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>
+        <li><a href="#">
+            <img src="images/7.jpg">
+            <h2>燕归巢</h2>
+            <p>许嵩</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>
+        <li><a href="#">
+            <img src="images/8.jpg">
+            <h2>望君歌</h2>
+            <p>阿睿凌霓剑裳</p></a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+        </li>        
+    </ul>
+</div>
+</body>
+</html>
