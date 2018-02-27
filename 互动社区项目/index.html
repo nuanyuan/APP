@@ -1,0 +1,121 @@
+<!DOCTYPE html>     
+<html>     
+<head>     
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<!--框架-->
+<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+<script type="text/javascript" src="js/jquery.mobile.min.js" ></script>  
+<script>
+	$( "#mypanel" ).trigger( "updatelayout" );  
+
+    $(document).ready(function(){
+      $("div").bind("swiperight", function(event) {
+        $( "#mypanel" ).panel( "open" );
+      });  
+    });
+</script>
+</head>               
+<body>     
+<div data-role="page">
+	<div data-role="panel" id="mypanel">
+		<h4>已登录</h4>
+		<p>张三</p>
+		<p>李四</p>
+	</div>
+	<div data-role="header" data-position="fixed">
+		<h1>闺蜜说</h1>
+	</div>
+	<div data-role="content">
+		<div data-role="collapsible-set">
+			<div data-role="collapsible">
+				<h4>张三对李四说</h4>
+				<h4>很喜欢这个东西</h4>
+				<p><b>王五：</b>什么东西</p>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+			<div data-role="collapsible">
+				<h4>王4对No女性说</h4>
+				<h4>好样的</h4>
+				<p><b>赵六：</b>呵呵</p>
+				<p><b>齐七：</b>哈哈</p>
+				<p><b>巴巴：</b>都说话呀。</p>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+			<div data-role="collapsible">
+				<h4>1对2说</h4>
+				<h4>我大于你</h4>
+				<p><b>3：</b>节操何在</p>
+				<p><b>4：</b>笑死人啦</p>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+			<div data-role="collapsible">
+				<h4>小偷对交警说</h4>
+				<h4>我们是偷钱，你们是抢钱啊！凭什么我们犯法，你们合法？</h4>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+			<div data-role="collapsible">
+				<h4>学生对老师说</h4>
+				<h4>凭什么你们上课能讲话，我们上课就要闭嘴？</h4>
+				<p><b>爸：</b>胡说什么</p>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+			<div data-role="collapsible">
+				<h4>a对b说</h4>
+				<h4>故人西辞黄鹤楼，烟花三月下扬州。</h4>
+				<p><b>c：</b>孤帆远影碧山尽，唯见长江天际流。</p>
+				<p><b>d：</b>不敢高声语，恐惊天上人。</p>
+				<p><b>e：</b>　两岸青山相对出，孤帆一片日边来。</p>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+			<div data-role="collapsible">
+				<h4>上对下说</h4>
+				<h4>俺想泡你</h4>
+				<p><b>大：</b>开水呢</p>
+				<p><b>小：</b>没有茶叶</p>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+			<div data-role="collapsible">
+				<h4>儿子对爸爸说</h4>
+				<h4>我敢叫你爸爸滚蛋，你敢吗？</h4>
+				<form>
+					<input type="text">
+					<a href="#" data-role="button">回复</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div  data-role="navbar" data-position="fixed">    
+			<ul>        
+				<li><a href="#">闺蜜说</a></li>        
+				<li><a href="#">登陆</a></li>        
+				<li><a href="#">注册</a></li>          
+			</ul>    
+		</div>
+	</div>
+</div>
+</body>     
+</html>

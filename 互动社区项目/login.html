@@ -1,0 +1,44 @@
+<!DOCTYPE html>     
+<html>     
+<head>     
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<!--框架-->
+<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js" ></script>
+<script type="text/javascript" src="js/jquery.mobile.min.js" ></script>
+<script type="text/javascript" src="js/form.js" ></script>
+</head>               
+<body>     
+<div data-role="page">
+	<div data-role="header" data-position="fixed">
+		<h1>登录闺蜜</h1>
+	</div>
+	<div data-role="content">
+		<form action="index.php" method="get">
+			<label for="zhanghao">真名:</label>
+			<input name="zhanghao" id="zhanghao" value="" type="text">
+			<label for="zhanghao">密码:</label>
+			<input name="mima" id="mima" value="" type="text">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+                    <input type="submit" data-role="button" value="登录">
+				</div>
+				<div class="ui-block-b">
+					<a data-role="button" href="register.php">注册</a>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div  data-role="navbar" data-position="fixed">    
+			<ul>        
+				<li><a href="index.php" data-ajax="false" rel="external">闺蜜说</a></li>        
+				<li><a href="login.html" data-ajax="false" rel="external">登录</a></li>        
+				<li><a href="register.php" data-ajax="false" rel="external">注册</a></li>          
+			</ul>    
+		</div>
+	</div>
+</div>
+</body>     
+</html>
